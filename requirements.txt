@@ -1,6 +1,6 @@
-Flask==2.0.3
-Jinja2==3.0.1
-numpy==1.19.5
-pickleshare==0.7.5
-gunicorn==20.1.0
-Werkzeug==2.0.1
+Flask
+Jinja2
+numpy
+pickleshare
+gunicorn
+Werkzeug
