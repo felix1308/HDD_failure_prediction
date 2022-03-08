@@ -37,4 +37,4 @@ def failure(failStatus=0,failFlag='healthy'):
 #     return render_template("sub.html", n = name)
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()
