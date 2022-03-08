@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model Deployment</title>
+</head>
+<body>
+    <h1>HDD failure prediction using SMART attributes and ML methods</h1>
+    <p>
+        Paste the smart attributes data that you have into the test column with the title and value of each smart attributes
+        for e.g, smart_5, 123, smart_187, 283 
+    </p>
+    <form action="/", method="POST">
+        <input type="text" name="smart_attributes" placeholder="paste the smart attributes">
+        <input type="submit">
+    </form>
+
+    {% if fail_status %}
+        <p>The machine learning model predicts that your HDD is: </p>{{fail_status}}
+    {% endif %}
+
+</body>
+</html>
